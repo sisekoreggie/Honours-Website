@@ -18,6 +18,13 @@ h2 {
 	text-align: center;
 }
 
+h3 {
+	color: #333333;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+    font-size: 120%;
+}
+
 #ABC {
     background-color: blue;
 }
@@ -189,9 +196,30 @@ footer {
 .fa-github {
   background: #333333;
   color: white;
-
 }
-	
+
+/* Styles for Inserting the PDF documents*/
+.pdf  {
+	text-align: center; 
+	display: inline-block
+}
+.pdf img{
+	display:block; 
+	border: none;
+	text-decoration: underline
+}
+.pdf:before{
+	content:'Download:'
+}
+
+/* Text section styling */
+section { 
+    display: block;
+    background: #87cefa;
+	width: 90%;
+	border-radius: 5%;
+	text-align: center; 
+}
 	
 	
 	
