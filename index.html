@@ -7,70 +7,126 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
 	</head>
 	<body>
-		<h1>IsiXhosa and isiZulu Spellcheckers</h1>
-		<div class = "wrap">
-			<div id='cssmenu'>
-				<ul>
-					<li><a href="#home">Home</a></li>
-					<li><a href="#detection">Error Detector</a></li>
-					<li><a href="#correction">Error Corrector</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li><a href="#downloads">Downloads</a></li>
-				</ul>
-			</div>
-		</div>
-		
-		<center>
-			<section>
-				<h3> About </h3>
-				<p>
-					The aim of the project is to improve on spellchecking for Nguni Languages, with emphasis on isiZulu and isiXhosa by:
-					Providing the African Language Section at the University of Cape Town with an isiXhosa error detector.
-					Providing the Language Department at the University of Kwa-Zulu Natal with an isiZulu error corrector.
-					To compare which approach is more accurate at error detection for isiXhosa: statistical or rule-based approach. 
 
-				</p>
-			</section>
-		</center>
-		<center>
-			<section>
-				<h3> Conclusion </h3>
-				<p>
-					Both the statistical and rule-based approach error detectors have been successfully implemented into standalone applications.
-					The rule based approach is more accurate than the statistical based approach for the error detection.
-					The error corrector has been successfully implemented and integrated with the already existing isiZulu error detector.
-				</p>
-			</section>
-		</center>
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+		  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+			<a href="#home" class="w3-bar-item w3-button">ALSPEL</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+			  <a href="#about" class="w3-bar-item w3-button">About</a>
+			  <a href="#about" class="w3-bar-item w3-button">Error Detection</a>
+			  <a href="#about" class="w3-bar-item w3-button">Error Correction</a>
+			  <a href="#about" class="w3-bar-item w3-button">Downloads</a>
+			  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Header -->
+		<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+		  <img class="w3-image" src="siseko_reggie.jpg" alt="Homepage Image" width="1600" height="800">
+		  <center><div class="w3-display-bottomleft w3-padding-large w3-opacity">
+			<h3 class="w3-xxlarge">IsiXhosa and isiZulu Spellcheckers</h3>
+		  </div></center>
+		</header>
 		
+		<!-- About the entire project -->
+		<h1 class="w3-center"> About </h1>
+		<center>
+			<p>
+				The aim of the project is to improve on spellchecking for Nguni Languages, with emphasis on isiZulu and isiXhosa by:
+				Providing the African Language Section at the University of Cape Town with an isiXhosa error detector.
+				Providing the Language Department at the University of Kwa-Zulu Natal with an isiZulu error corrector.
+				To compare which approach is more accurate at error detection for isiXhosa: statistical or rule-based approach. 
+			</p>
+		</center>
+
+		<!-- Page content -->
+		<div class="w3-content" style="max-width:1100px">
+		
+		  <!-- Rule Based Section -->
+		  <div class="w3-row w3-padding-64" id="about">
+			<div class="w3-col m6 w3-padding-large w3-hide-small">
+			 <img src="rule_based.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+			</div>
+
+			<div class="w3-col m6 w3-padding-large">
+			  <h1 class="w3-center">Rule-Based Error Detector</h1>
+			  <p class="w3-large"> The Rule-based error detector for isiXhosa was implemented as a finite state transducer network, where we used the
+				SFST-PL (a programming language for the tool SFST) which supports many different formats of regular expressions such as the ones used in grep, sed or Perl. Based on the morphology books
+				we have developed rules for nouns, verbs, adjectives, pronouns and possessives. We have then used Java Swing for implementing the interface on the left.
+			</div>
+		  </div>
+		  
+		  <hr>
+		  
+		  <!-- Statistical Bassed Section -->
+		  <div class="w3-row w3-padding-64" id="menu">
+			<div class="w3-col l6 w3-padding-large">
+			  <h1 class="w3-center">Statistical based</h1><br>
+			  <p class="w3-large">The statistical based error detector for isiXhosa </p><br>
+		   
+			</div>
+			
+			<div class="w3-col l6 w3-padding-large">
+			  <img src="nthabi.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" width="500" height="750">
+			</div>
+		  </div>
+
+		  <hr>
+		  
+		  <!-- Error Corrector: Statistical Based Section -->
+		  <div class="w3-row w3-padding-64" id="about">
+			<div class="w3-col m6 w3-padding-large w3-hide-small">
+			 <img src="isizulu.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+			</div>
+
+			<div class="w3-col m6 w3-padding-large">
+			  <h1 class="w3-center">IsiZulu Error Corrector</h1><br>
+			  <p class="w3-large"> The Rule-based error detector for isiXhosa <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+			  <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			</div>
+		  </div>
+		  
+		  <hr>
+
+		
+		<!-- Team Details -->
+		<h1 class="w3-center">The Team</h1>
 		<table align="center">
+		 <tr>
+			<td><h2>Siseko Neti</h2></td>
+			<td></td>
+			<td><h2>Frida Mjari</h2></td>
+			<td></td>
+			<td><h2>Nthabiseng Moshiane</h2></td>
+		 </tr>
 		  <tr>
-			<td><p>Rule-based spelling error detector for isiXhosa implemented using finite state transducers, regular expressions, SFST and Java Swing.</p></td>
+			<td><center><p>Responsible for the implementation of the rule-based spelling error detector for isiXhosa.</p></center></td>
 			<td></td>
-			<td><p>IsiZulu error corrector using a statistical approach integrated onto existing error detector. Trigrams, minimum-edit distance and probabilities were used to find candidate corrections.</p></td>
+			<td><center><p>Responsible for the implementation of the spelling error corrector for isiZulu.</p></center></td>
 			<td></td>
-			<td><p>IsiXhosa spellchecker created using data-driven statistical model. Character trigrams and probabilities were used to determine whether a word is correctly spelled.</p></td>
+			<td><center><p>Responsible for the implementation of the statistical-based spelling error detector for isiXhosa.</p></center></td>
 			
 		  </tr>
 		  <tr>
 		    <td>
-				<div class="w3-container">
-					<h2>Siseko Neti</h2>
+				<div class="w3-container">	
 					<img src="siseko_reggie.jpg" class="w3-circle" alt="Siseko" style="width:200px">
 				</div></td>
 			<td></td>
 			<td>
 				<div class="w3-container">
-					<h2>Frida Mjari</h2>
 					<img src="siseko_reggie.jpg" class="w3-circle" alt="Frida" style="width:200px">
 				</div></td>
 			</td>
 			<td></td>
 			<td> 
 				<div class="w3-container">
-					<h2>Nthabiseng Moshiane</h2>
 					<img src="siseko_reggie.jpg" class="w3-circle" alt="Nthabiseng" style="width:200px">
 				</div></td>
 			
@@ -93,6 +149,21 @@
 				<a href="#" class="fa fa-google"></a>
 				<a href="#" class="fa fa-linkedin"></a>
 				<a href="#" class="fa fa-github"></a>
+			</td>
+		  </tr>
+		</table>
+		
+		<!-- Supervisor contact details -->
+		<h1 class="w3-center">Project Supervisor</h1>
+		<table>
+		  <tr>
+		    <td>
+				<div class="w3-container">
+					<img src="maria.jpg" class="w3-circle" alt="Maria" style="width:150px">
+				</div>
+			</td>
+			
+			<td>
 			</td>
 		  </tr>
 		</table>
