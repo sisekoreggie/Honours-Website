@@ -40,27 +40,61 @@
 		<h1 id = "about" class="w3-center"> About </h1>
 		<center>
 			<p>
-				The aim of the project is to improve on spellchecking for Nguni Languages, with emphasis on isiZulu and isiXhosa by:
-				Providing the African Language Section at the University of Cape Town with an isiXhosa error detector.
-				Providing the Language Department at the University of Kwa-Zulu Natal with an isiZulu error corrector.
-				To compare which approach is more accurate at error detection for isiXhosa: statistical or rule-based approach. 
+				Very few spellcheckers exist that can detect and correct spelling errors in Nguni languages. With 2 Nguni languages, 
+				isiZulu and isiXhosa, being the most widely spoken languages in South Africa
+				and with the increase in digital text-based communication, the development of spellcheckers for Nguni languages is crucial.
+				There are currently no standalone spellcheckers for isiXhosa. For isiZulu, the current spellchecker developed by 
+				Ndaba et al. [2016] does not perform error correction.
 			</p>
 		</center>
+		
+		<!-- Project objectives -->
+		<h1 id = "about" class="w3-center"> Project Objectives </h1>
+		<center>
+			<p>
+					The aim of this project is to provide the African Language
+					department at the University of Cape Town with an isiXhosa
+					spellchecker which performs error detection which currently does
+					not exist. We also aim to investigate whether an error detector
+					implemented using a statistical based approach is more accurate
+					compared to a rule-based approach. In addition to this, the project
+					aims to investigate whether a statistical approach can be utilized
+					in successfully implementing an error corrector for the existing
+					isiZulu spellchecker developed by Ndaba et al. [2016].</br></br>
+			</p>
+		</center>
+					
+					We have three research questions:
+					<ul>
+					  <li>Is the rule based approach more accurate at detecting misspelled words compared to the statistical based approach</li>
+					  <li>Can a statistical based error detector for on isiXhosa achieve an accuracy of 85% or more </li>
+					  <li>Can an error corrector correct more than 85% of misspelled words in an input text using a statistical error model based on Bayes' rule</li>
+					</ul>
+					
+					
+		
+		
+		<h1 id = "about" class="w3-center"> Context </h1>
 
 		<!-- Page content -->
 		<div class="w3-content" style="max-width:1100px">
 		
 		  <!-- Rule Based Section -->
+		  
 		  <div id = "rule_based" class="w3-row w3-padding-64">
+		  <h1 class="w3-center">Rule-Based Error Detector</h1>
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
 			 <img src="rule_based.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
 			</div>
 
 			<div class="w3-col m6 w3-padding-large">
-			  <h1 class="w3-center">Rule-Based Error Detector</h1>
-			  <p class="w3-large"> The Rule-based error detector for isiXhosa was implemented as a finite state transducer network, where we used the
+			  <p class="w3-large">The Rule-based error detector for isiXhosa was implemented as a finite state transducer network, where we used the
 				SFST-PL (a programming language for the tool SFST) which supports many different formats of regular expressions such as the ones used in grep, sed or Perl. Based on the morphology books
-				we have developed rules for nouns, verbs, adjectives, pronouns and possessives. We have then used Java Swing for implementing the interface on the left.
+				that we were reading, we have developed rules for nouns, verbs, adjectives, pronouns and possessives. We have then used Java Swing for implementing the interface shown on the left.</br></br>
+				
+				For our testing purposes we used a corpus received from the African Language section at the University of Cape Town which had 21852 documents together with textfile extracted from the RMA website which had 20826 nouns.
+				We first tested each transducer for POS tagging and then combined the system as a complete system. In terms of POS tagging the accuracy for the noun rules is 88.26%, 94.58% for the verb rules, 
+				97.91% for adjective rules, 98.12% for the pronoun rules and 100% for the possessive rules. The overall spellchecking accuracy of the system was 80.08%. 
 			</div>
 		  </div>
 		  
