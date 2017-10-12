@@ -1,13 +1,13 @@
 
 <html>
-	<head> 
+	<head>
 		<title> ALSPEL </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
-		
+
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+
 	</head>
 	<body>
 
@@ -20,7 +20,7 @@
 			  <a href="#about" class="w3-bar-item w3-button">About</a>
 			  <!-- <a href="#" class="w3-bar-item w3-button">Error Detection</a> -->
 			  <a href="#rule_based" class="w3-bar-item w3-button">Rule-Based</a>
-			  <a href="#stats_based" class="w3-bar-item w3-button">Statistical-Based</a>
+			  <a href="stats.html" class="w3-bar-item w3-button">Statistical-Based</a>
 			  <a href="#correction" class="w3-bar-item w3-button">Error Correction</a>
 			  <a href="#downloads" class="w3-bar-item w3-button">Downloads</a>
 			  <a href="#contacts" class="w3-bar-item w3-button">Contact</a>
@@ -35,19 +35,19 @@
 			<h3 class="w3-xxlarge">IsiXhosa and isiZulu Spellcheckers</h3>
 		  </div></center>
 		</header>
-		
+
 		<!-- About the entire project -->
 		<h1 id = "about" class="w3-center"> About </h1>
 		<center>
 			<p>
-				Very few spellcheckers exist that can detect and correct spelling errors in Nguni languages. With 2 Nguni languages, 
+				Very few spellcheckers exist that can detect and correct spelling errors in Nguni languages. With 2 Nguni languages,
 				isiZulu and isiXhosa, being the most widely spoken languages in South Africa
 				and with the increase in digital text-based communication, the development of spellcheckers for Nguni languages is crucial.
-				There are currently no standalone spellcheckers for isiXhosa. For isiZulu, the current spellchecker developed by 
+				There are currently no standalone spellcheckers for isiXhosa. For isiZulu, the current spellchecker developed by
 				Ndaba et al. [2016] does not perform error correction.
 			</p>
 		</center>
-		
+
 		<!-- Project objectives -->
 		<h1 id = "about" class="w3-center"> Project Objectives </h1>
 		<center>
@@ -63,24 +63,24 @@
 					isiZulu spellchecker developed by Ndaba et al. [2016].</br></br>
 			</p>
 		</center>
-					
+
 					We have three research questions:
 					<ul>
 					  <li>Is the rule based approach more accurate at detecting misspelled words compared to the statistical based approach</li>
 					  <li>Can a statistical based error detector for on isiXhosa achieve an accuracy of 85% or more </li>
 					  <li>Can an error corrector correct more than 85% of misspelled words in an input text using a statistical error model based on Bayes' rule</li>
 					</ul>
-					
-					
-		
-		
+
+
+
+
 		<h1 id = "about" class="w3-center"> Context </h1>
 
 		<!-- Page content -->
 		<div class="w3-content" style="max-width:1100px">
-		
+
 		  <!-- Rule Based Section -->
-		  
+
 		  <div id = "rule_based" class="w3-row w3-padding-64">
 		  <h1 class="w3-center">Rule-Based Error Detector</h1>
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
@@ -91,30 +91,30 @@
 			  <p class="w3-large">The Rule-based error detector for isiXhosa was implemented as a finite state transducer network, where we used the
 				SFST-PL (a programming language for the tool SFST) which supports many different formats of regular expressions such as the ones used in grep, sed or Perl. Based on the morphology books
 				that we were reading, we have developed rules for nouns, verbs, adjectives, pronouns and possessives. We have then used Java Swing for implementing the interface shown on the left.</br></br>
-				
+
 				For our testing purposes we used a corpus received from the African Language section at the University of Cape Town which had 21852 documents together with textfile extracted from the RMA website which had 20826 nouns.
-				We first tested each transducer for POS tagging and then combined the system as a complete system. In terms of POS tagging the accuracy for the noun rules is 88.26%, 94.58% for the verb rules, 
-				97.91% for adjective rules, 98.12% for the pronoun rules and 100% for the possessive rules. The overall spellchecking accuracy of the system was 80.08%. 
+				We first tested each transducer for POS tagging and then combined the system as a complete system. In terms of POS tagging the accuracy for the noun rules is 88.26%, 94.58% for the verb rules,
+				97.91% for adjective rules, 98.12% for the pronoun rules and 100% for the possessive rules. The overall spellchecking accuracy of the system was 80.08%.
 			</div>
 		  </div>
-		  
+
 		  <hr>
-		  
+
 		  <!-- Statistical Bassed Section -->
 		  <div id = "stats_based" class="w3-row w3-padding-64">
 			<div class="w3-col l6 w3-padding-large">
 			  <h1 class="w3-center">Statistical based</h1><br>
 			  <p class="w3-large">The statistical based error detector for isiXhosa </p><br>
-		   
+
 			</div>
-			
+
 			<div class="w3-col l6 w3-padding-large">
 			  <img src="images/nthabi.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" width="500" height="750">
 			</div>
 		  </div>
 
 		  <hr>
-		  
+
 		  <!-- Error Corrector: Statistical Based Section -->
 		  <div id = "correction" class="w3-row w3-padding-64">
 			<div class="w3-col m6 w3-padding-large w3-hide-small">
@@ -127,10 +127,10 @@
 			  <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 			</div>
 		  </div>
-		  
+
 		  <hr>
 
-		
+
 		<!-- Team Details -->
 		<h1 id = "contacts" class="w3-center">The Team</h1>
 		<table align="center">
@@ -139,7 +139,9 @@
 			<td></td>
 			<td><h2>Frida Mjari</h2></td>
 			<td></td>
-			<td><h2>Nthabiseng Moshiane</h2></td>
+			<td><h2>Nthabiseng Mashiane</h2></td>
+			<td></td>
+			<td><h2>Dr Maria Keet</h2></td>
 		 </tr>
 		  <tr>
 			<td><center><p>Responsible for the implementation of the rule-based spelling error detector for isiXhosa.</p></center></td>
@@ -147,25 +149,32 @@
 			<td><center><p>Responsible for the implementation of the spelling error corrector for isiZulu.</p></center></td>
 			<td></td>
 			<td><center><p>Responsible for the implementation of the statistical-based spelling error detector for isiXhosa.</p></center></td>
-			
+			<td></td>
+			<td><center><p>Project supervisor</p></center></td>
 		  </tr>
+
 		  <tr>
 		    <td>
-				<div class="w3-container">	
-					<img src="images/siseko_reggie.jpg" class="w3-circle" alt="Siseko" style="width:200px">
+				<div class="w3-container">
+					<img src="images/siseko_reggie.jpg" class="w3-circle" alt="Siseko" style="width:150px" "height:100px">
 				</div></td>
 			<td></td>
 			<td>
 				<div class="w3-container">
-					<img src="images/siseko_reggie.jpg" class="w3-circle" alt="Frida" style="width:200px">
+					<img src="images/siseko_reggie.jpg" class="w3-circle" alt="Frida" style="width:150px" "height:100px">
 				</div></td>
 			</td>
 			<td></td>
-			<td> 
+			<td>
 				<div class="w3-container">
-					<img src="images/siseko_reggie.jpg" class="w3-circle" alt="Nthabiseng" style="width:200px">
+					<img src="images/Nthabi.jpg" class="w3-circle" alt="Nthabiseng" style="width:150px" "height:100px">
 				</div></td>
-			
+				<td></td>
+				<td>
+					<div class="w3-container">
+						<img src="images/maria.jpg" class="w3-circle" alt="Nthabiseng" style="width:150px" "height:100px">
+					</div></td>
+
 			</td>
 		  </tr>
 		  <tr>
@@ -182,31 +191,37 @@
 			</td>
 			<td></td>
 			<td>
-				<a href="#" class="fa fa-google"></a>
-				<a href="#" class="fa fa-linkedin"></a>
-				<a href="#" class="fa fa-github"></a>
+				<a href="nthabimashiane@gmail.com" class="fa fa-google"></a>
+				<a href="https://www.linkedin.com/in/nthabiseng-mashiane-360991a4" class="fa fa-linkedin"></a>
+				<a href="https://github.com/Nthabi/isiXhosa-Spellchecker" class="fa fa-github"></a>
+			</td>
+			<td></td>
+			<td>
+				<a href="#" class="fa fa-envelope"></a>
+				<a href="https://www.linkedin.com/in/nthabiseng-mashiane-360991a4" class="fa fa-linkedin"></a>
+
 			</td>
 		  </tr>
 		</table>
-		
-		<!-- Supervisor contact details -->
+
+		<!-- Supervisor contact details
 		<h1 class="w3-center">Project Supervisor</h1>
 		<table>
 		  <tr>
-		    <td>
+
 				<div class="w3-container">
-					<img src="images/maria.jpg" class="w3-circle" alt="Maria" style="width:150px" style="float:left;width:42px;height:42px;">
+					<img src="images/maria.jpg" class="w3-circle" alt="Maria" style="width:150px" style="float:center;width:42px;height:42px;">
 				</div>
-			</td>
+
 			<td>
-				
+
 			</td>
 		  </tr>
-		</table>
-		
+		</table>-->
+
 		<h1 id = "downloads"> Project Downloads </h1>
 
-		
+
 		<div class="nostyle">
 		<table>
 		  <tr>
@@ -227,23 +242,26 @@
 		  <tr>
 			<td></td>
 			<td>
+				<a href="/images/myw3schoolsimage.jpg" download>Rule Based Error Detector.zip</a>
 				<h2><i>Rule-Based</br> Project Code</i></br><a href="source_code/Morphological-Analyser.zip"><img src="images/zip_file.png"  alt="Siseko - Project Code" height="142" width="142"></a></h2>
 			</td>
 			<td></td>
-			<td>
-				<h2><i>Statistical-Based</br> Project Code</i></br><a href="source_code/Morphological-Analyser.zip"><img src="images/zip_file.png"  alt="Nthabiseng - Project Code" height="142" width="142"></a></h2>
+			<td
+				<a href="/images/myw3schoolsimage.jpg" download>Statistical Error Detector.zip</a>
+			<!--	<h2><i>Statistical-Based</br> Project Code</i></br><a href="source_code/Morphological-Analyser.zip"><img src="images/zip_file.png"  alt="Nthabiseng - Project Code" height="142" width="142"></a></h2> -->
 			</td>
 			<td></td>
 			<td>
-				<h2><i>Error Detector</br> Project Code</i></br><a href="source_code/Morphological-Analyser.zip"><img src="images/zip_file.png"  alt="Frida - Project Code" height="142" width="142"></a></h2>
+				<a href="/images/myw3schoolsimage.jpg" download>Error Corrector zip</a>
+				<!--<h2><i>Error Detector</br> Project Code</i></br><a href=""><img src="images/zip_file.png"  alt="Frida - Project Code" height="142" width="142"></a></h2>-->
 			</td>
 			<td></td>
 		  </tr>
 		</table>
 		</div>
-		
+
 		<footer>&copy; University of Cape Town, Department of Computer Science. All rights reserved </footer>
-		
+
 
 	</body>
 </html>
