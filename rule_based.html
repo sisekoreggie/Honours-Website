@@ -1,0 +1,121 @@
+<html>
+	<head>
+		<title> ALSPEL </title>
+		<link rel="stylesheet" type="text/css" href="style_rule_based.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	</head>
+	<body>
+
+		<!-- Navbar (sit on top) -->
+		<div class="w3-top">
+		  <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+			<a href="index.html#home" class="w3-bar-item w3-button">ALSPEL</a>
+			<!-- Right-sided navbar links. Hide them on small screens -->
+			<div class="w3-right w3-hide-small">
+			  <a href="#about" class="w3-bar-item w3-button">About</a>
+			  <!-- <a href="#" class="w3-bar-item w3-button">Error Detection</a> -->
+			  <a href="rule_based.html" class="w3-bar-item w3-button">Rule-Based</a>
+			  <a href="stats.html" class="w3-bar-item w3-button">Statistical-Based</a>
+			  <a href="error_corrector.html" class="w3-bar-item w3-button">Error Correction</a>
+			  <a href="#downloads" class="w3-bar-item w3-button">Downloads</a>
+			  <a href="index.html#contacts" class="w3-bar-item w3-button">Contact</a>
+			</div>
+		  </div>
+		</div>
+
+		<!-- Header -->
+		 </br> </br> </br>
+		  <section></br>
+			<h1 >IsiXhosa Rule Based Error Detector</h1>
+			<h2> Developed by Siseko Neti </h2>
+		  </section>
+		  
+		  <!-- Problem -->
+		  <h3>Problem</h3>
+		  <p>
+				The approach that has been used in the spellchecking field is the statistical based approach.
+				
+		  </p>
+		  
+		  <!-- Rule Design -->
+		  <h3>Rule Design</h3>
+		  <p>
+			The rules of the system were
+		  </p>
+		  
+		  <!-- System development and Design -->
+		  <h3>System Development and Testing </h3>
+		  <center>
+		  <table>
+			<tr>
+				<td></td> <td></td> <td></td> <td></td> <td></td>
+				<td>
+					<img src="images/rule_based.png" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="2000" height="150">
+				</td>
+				<td></td>
+				<td>
+				The error detector was implemented as a finite state transducer network, where we used the
+				SFST-PL (a programming language for the tool SFST) which supports many different formats of regular expressions such 
+				as the ones used in grep, sed or Perl. Based on the morphology books
+				that we were reading, we have developed rules for nouns, verbs, adjectives, pronouns and possessives. 
+				We have then used Java Swing for implementing the interface shown on the left. The interface was built for testing the rules 
+				and there we no user evaluations conducted for this interface. </br></br>
+				
+				In testing the system we used a corpus received from the African Language section at the University of Cape Town which
+				had 21852 words together with a textfile extracted from the RMA website which had 20826 nouns.
+				We first tested each transducer for Part-Of-Speech (POS) tagging and then combined the system as a complete system. 
+				In terms of POS tagging the accuracy for the noun rules was 88.26%, 94.58% for the verb rules,
+				97.91% for adjective rules, 98.12% for the pronoun rules and 100% for the possessive rules. 
+				The overall spellchecking accuracy of the system was 80.08%.
+				</td>
+				
+			</tr>
+		  </table>
+		  </center>
+		  
+		  <p>
+
+			
+		  </p>
+		  
+		 <h3>Project Downloads</h3>
+		 <table>
+		  <tr>
+			<td></td>
+			<td>
+				<h4>Rule-Based Literature Review</br><a href="documents/siseko_literature_review.pdf"><img src="images/lit_review.png"  alt="Siseko - Literature Review" style="width:350px"></a></h4>
+			</td>
+			<td></td>
+			<td>
+				<h4>Rule-Based Project Report</br><a href="documents/siseko_project_report.pdf"><img src="images/siseko_report.png"  alt="Siseko - Project report" style="width:350px"></a></h4>
+			</td>
+			<td></td>
+			<td>
+				<h4><i>Rule-Based Project Code</i></br><a href="source_code/Morphological-Analyser.zip"><img src="images/zip_file.png"  alt="Siseko - Project Code" height="142" width="142"></a></h4>
+			</td>
+
+			<td></td>
+		  </tr>
+		</table>
+		  
+		  <!-- Conclusion -->
+		  <h3>Conclusion</h3>
+		  <p>
+			The rules of the system were
+		  </p>
+		  
+		  <footer>&copy; University of Cape Town, Department of Computer Science. All rights reserved </footer>
+		  
+	</body>	  
+</html>
+		  
+		  
+		
+		
+		
+		
+		
