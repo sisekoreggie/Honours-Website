@@ -35,21 +35,26 @@
 		  </section>
 		  
 		  <!-- Problem -->
-		  <h3>Problem</h3>
+		  <center>
+		  <h3><b>Problem and Aim</b></h3>
 		  <p>
-				The approach that has been used in the spellchecking field is the statistical based approach.
+				Before this attempt, there were currently two spellcheckers available for the Nguni language isiXhosa (Spellchecker.net and an OpenOffice plugin), which both have limitations in terms of their functionality, scope and accuracy.
+				The main objective of this project was to investigate the feasibility of developing an error detector for isiXhosa using the rule based approach and then compare which approach 
+				was more accurate between <a href="documents/siseko_project_report.pdf">this</a> rule-based approach and the statisctical based approach (presented in Nthabiseng Moshiane's paper).
 				
 		  </p>
 		  
 		  <!-- Rule Design -->
-		  <h3>Rule Design</h3>
+		  <h3><b>Rule Design</b></h3>
 		  <p>
-			The rules of the system were
+			Since a rule-based spellingchecker uses the grammar rules of the language to check for spelling errors, we had to define these grammar rules
+			as finite state transducers. Due to time constraints we only developed rules for specific Part-Of-Speech (POS) categories of the language. These POS categories were 
+			nouns, verbs, adjectives, pronouns and possessives. These were choosen based on the morphology books that we were reading 
+			and the effect of each rule in the entire system was evaluated.			
 		  </p>
 		  
 		  <!-- System development and Design -->
-		  <h3>System Development and Testing </h3>
-		  <center>
+		  <h3><b>System Development and Testing</b></h3>
 		  <table>
 			<tr>
 				<td></td> <td></td> <td></td> <td></td> <td></td>
@@ -60,17 +65,16 @@
 				<td>
 				The error detector was implemented as a finite state transducer network, where we used the
 				SFST-PL (a programming language for the tool SFST) which supports many different formats of regular expressions such 
-				as the ones used in grep, sed or Perl. Based on the morphology books
-				that we were reading, we have developed rules for nouns, verbs, adjectives, pronouns and possessives. 
-				We have then used Java Swing for implementing the interface shown on the left. The interface was built for testing the rules 
+				as the ones used in grep, sed or Perl. 
+				We have used Java Swing for implementing the interface shown on the left. The interface was built for testing the rules 
 				and there we no user evaluations conducted for this interface. </br></br>
 				
-				In testing the system we used a corpus received from the African Language section at the University of Cape Town which
-				had 21852 words together with a textfile extracted from the RMA website which had 20826 nouns.
-				We first tested each transducer for Part-Of-Speech (POS) tagging and then combined the system as a complete system. 
+				In testing the system we used a corpus received from the African Language section in the University of Cape Town which
+				had 21852 words and a textfile downloaded from the RMA website which had 20826 nouns.
+				We first tested each transducer for POS tagging and then combined the transducers to form the complete system. 
 				In terms of POS tagging the accuracy for the noun rules was 88.26%, 94.58% for the verb rules,
 				97.91% for adjective rules, 98.12% for the pronoun rules and 100% for the possessive rules. 
-				The overall spellchecking accuracy of the system was 80.08%.
+				The overall spellchecking accuracy of the system was 80.08%. <a href="documents/siseko_project_report.pdf"> Read more </a>
 				</td>
 				
 			</tr>
@@ -81,8 +85,19 @@
 
 			
 		  </p>
+		 <center>		
 		  
-		 <h3>Project Downloads</h3>
+		  <!-- Conclusion -->
+		  <h3><b>Conclusion</b></h3>
+		  <p>
+		    The project has shown that it is feasible to develop an error detector for isiXhosa using the rule-based approach and this project resulted in the
+		    successful implementation of the morphological analyser with noun, verb, adjectives, pronouns and possessives rules.
+			The rule based approach (presented <a href="documents/siseko_project_report.pdf">here</a>) had a higher spellchecking accuracy than the statistical 
+			based approach (presented in Nthabiseng Moshiane's paper).
+		  </p>
+		  
+		 <h3 id = "downloads"><b>Project Downloads</b></h3>
+		 
 		 <table>
 		  <tr>
 			<td></td>
@@ -101,13 +116,8 @@
 			<td></td>
 		  </tr>
 		</table>
-		  
-		  <!-- Conclusion -->
-		  <h3>Conclusion</h3>
-		  <p>
-			The rules of the system were
-		  </p>
-		  
+		 </center>
+		 
 		  <footer>&copy; University of Cape Town, Department of Computer Science. All rights reserved </footer>
 		  
 	</body>	  
