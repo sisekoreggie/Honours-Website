@@ -1,0 +1,9 @@
+.content {
+  padding: 0cm 2cm 1cm 2cm;
+}
+
+span:before{
+    content:" ";
+    display:inline-block;
+    width:32px;
+}

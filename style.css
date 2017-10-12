@@ -131,3 +131,8 @@ section {
 }
 
 /* Resetting the table style using div  */
+
+/*Paragraph padding*/
+.content{
+	padding: 0cm 2cm 1cm 2cm;
+}
