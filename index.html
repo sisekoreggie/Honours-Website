@@ -10,6 +10,12 @@
 
 	</head>
 	<body>
+		<!-- Header -->
+		<header class="site-header" >
+			<div class="wrapper">
+		 	<h1 class="site-title"> IsiXhosa and IsiZulu spellcheckers</h1>
+		</div>
+		</header>
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
@@ -28,13 +34,14 @@
 		  </div>
 		</div>
 
-		<!-- Header -->
-		<header id = "home" class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px">
-		  <img class="w3-image" src="images/siseko_reggie.jpg" alt="Homepage Image" width="1600" height="200">
-		  <center><div class="w3-display-bottomleft w3-padding-large w3-opacity">
-			<h3 class="w3-xxlarge">IsiXhosa and isiZulu Spellcheckers</h3>
-		  </div></center>
-		</header>
+
+
+	<!--	<div  id="header">
+			<h1>Spellcheckers for isiXhosa & isiZulu</h1>
+
+
+		</div> -->
+
 
 		<!-- About the entire project -->
 		<h1 id = "about" class="w3-center"> Overview </h1>
@@ -73,7 +80,7 @@
 			</p>
 		</center>
 
-				<h1 id = "about" class="w3-center"> Project Objectives </h1>
+				<h1 id = "about" class="w3-center"> Research Questions </h1>
 				<center>
 				<p class="content">
 					The project aims to address the following research questions:<br/>
@@ -113,15 +120,28 @@
 
 		  <!-- Statistical Bassed Section -->
 		  <div id = "stats_based" class="w3-row w3-padding-64">
+			<h1 class="w3-center">Statistical based</h1>
 			<div class="w3-col l6 w3-padding-large">
-			  <h1 class="w3-center">Statistical based</h1><br>
-			  <p class="w3-large">The statistical based error detector for isiXhosa </p><br>
-
-			  <center><a href="stats.html" class="button">Read More</a></center>
+			  <img src="images/isiXhosaSpellchecker.png" class="w3-round w3-image w3-opacity-min" alt="IsiXhosa spellchecker" width="500" height="750">
 			</div>
 
 			<div class="w3-col l6 w3-padding-large">
-			  <img src="images/isiXhosaSpellchecker.png" class="w3-round w3-image w3-opacity-min" alt="IsiXhosa spellchecker" width="500" height="750">
+			 <br>
+			  <p class="w3-large">
+					An error detection module was created using n-gram analysis.
+					Character trigrams were created then stored with their
+					corresponding frequency from the corpus. The probability of a trigram
+					existing in the corpus was calculated using the formula<br/>
+					<strong>𝑃 ( 𝑤/𝑁 ) = (𝑤𝑓𝑟𝑒𝑞𝑢𝑒𝑛𝑐𝑦/ 𝑁 𝑓𝑟𝑒𝑞𝑢𝑒𝑛𝑐y)</strong><br/>
+					where w is the word and N is the total number of words in
+					the corpus.
+					The trigram frequency is then compared with a predetermined
+					threshold (0.003) during error detection. If the frequency of the trigram is
+					below the threshold, the world is flagged as incorrect otherwise,
+					the word is flagged as correct.
+				 </p><br>
+
+			  <center><a href="stats.html" class="button">Read More</a></center>
 			</div>
 		  </div>
 
