@@ -39,7 +39,7 @@ section {
 
 /* Footer Styling */
 footer {
-	background: #aaa;
+	background: #000080;
 	color:white;
 	text-align: center;
 	width: 100%;
@@ -63,13 +63,3 @@ td, th {
     text-align: left;
     padding: 8px;
 }
-
-
-
-
-
-
-
-
-
-

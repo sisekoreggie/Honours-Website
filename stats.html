@@ -4,11 +4,18 @@
 
   </title>
   <link rel="stylesheet" type="text/css" href="statsStyle.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+<body>
+<!-- Header -->
+<header class="site-header" >
+  <div class="wrapper">
+  <h1 class="site-title"> IsiXhosa and IsiZulu spellcheckers</h1>
+</div>
+</header>
 
 <!-- NavBar at the top -->
 <div class="w3-top">
@@ -18,16 +25,22 @@
   <div class="w3-right w3-hide-small">
     <a href="index.html" class="w3-bar-item w3-button">Home</a>
     <!-- <a href="#" class="w3-bar-item w3-button">Error Detection</a> -->
-    <a href="#rule_based" class="w3-bar-item w3-button">Rule-Based</a>
+    <a href="rule_based.html" class="w3-bar-item w3-button">Rule-Based</a>
     <a href="stats.html" class="w3-bar-item w3-button">Statistical-Based</a>
-    <a href="#correction" class="w3-bar-item w3-button">Error Correction</a>
-    <a href="#Project_Archives" class="w3-bar-item w3-button">Downloads</a>
+    <a href="error_corrector.html" class="w3-bar-item w3-button">Error Correction</a>
+    <a href="stats.html#Project_Archives" class="w3-bar-item w3-button">Downloads</a>
   <!--  <a href="#contacts" class="w3-bar-item w3-button">Contact</a> -->
   </div>
   </div>
 </div>
+<!-- Header -->
 
-<h1 align="center">Statistical-Based Error Detection</h1>
+  <section></br>
+  <h1 class="top" >Statistical Based Error Detector</h1>
+  <h2 class="top"> Developed by Nthabiseng Mashiane </h2>
+  </section>
+
+<!--<h1 align="center">Statistical-Based Error Detection</h1>-->
 <div align="center" margin="0px 20px 0px 20px">
   <h2>Introduction</h2>
   <p class="content">
@@ -55,25 +68,43 @@
 <div>
   <h2>System Design & Implementation</h2>
   <p class="content">
-  The error detector of this spellchecker uses n-gram analysis, particularly character trigrams.
+  The error detector uses n-gram analysis, particularly character trigrams.
   These trigrams were created from the word corpus received from Dr Mantoa-Masoko (the
   client) which was combined with an online corpus downloaded from the North West University digital languages
   resources website which can be found
-  <a href="https://rma.nwu.ac.za/index.php/catalogsearch/result/?q=isiXhosa+NCHLT+Text+Corpora"> here </a> .
+  <a href="https://rma.nwu.ac.za/index.php/catalogsearch/result/?q=isiXhosa+NCHLT+Text+Corpora"><strong> here </strong></a> .
 
   The corpus has to be clean and prepared for use by the spellchecker. This step is important as the
   documents used to create the corpus directly affect the performance of the spellchecker.
   A clean corpus is one which does not contain words of another language and punctuation as
   this will affect the creation of the trigrams.
   A cleaner corpus leads to better results. Although no spellchecker is 100% accurate, clean and
-  large corpora improve the performance of the spellchecker.<br/>
-
+  large corpora improve the performance of the spellchecker.
   A trigram is a set of 3 consecutive characters. For example, if the input word is
   “Molweni”, for trigrams the output would be “Mol”, “olw”,
   “lwe”, “wen”, “eni”. In addition to storing these tree structures , the frequency of each n-gram was
-  stored as a key-value pair.
-  </p>
+  stored as a key-value pair.<br/>
 
+   <p class="content2">A user interface design that was as
+  simple as possible was creted in order to avoid overwhelming and cluttering
+  the user. The design process followed was expert-mindset.<br/>
+  To evaluate the usability and look of the spellchecker, a
+  usability study was conducted. A group of participants that
+  comprised of students at the University of Cape Town who study
+  isiXhosa at university level or have studied IsiXhosa until grade
+  12 were asked to partake in the usability testing. The testing
+  session was 30 minutes long. During this time, users were
+  observed as they used the tool to see how quickly they could
+  understand the tasks to be completed and how they proceeded to
+  begin and complete the task. Users were allowed to give feedback
+in​ ​ real-time​ ​ as​ ​ they​ ​ used​ ​ the​ ​ tool​ ​ during​ ​ the​ ​ study </p>
+  </p>
+  <div class="picture">
+  <figure>
+    <img src="images/isiXhosaSpellchecker.png" class="w3-round w3-image w3-opacity-min" alt="IsiXhosa spellchecker" width="600" height="750">
+  </br><figcaption>IsiXhosa Spellchecker Interface</figcaption>
+  </figure>
+  </div>
 </div>
 
 <div>
@@ -95,7 +126,7 @@
 <div>
   <h2>Conclusion</h2>
   <p class="content">
-    The aim of this project was to create a
+    This project aimed to create a
     data-driven statistical based model to perform isolated non-word
     error detection for an isiXhosa spellchecker. This tool was
     successfully created as a desktop application and achieves an
@@ -110,16 +141,17 @@
 <div>
   <h2 id="Project_Archives">Project Archives</h2>
   <p class="content">
-    <span><a href="/documents/projectproposal_finaldraft" download>Project Proposal</a></span>
+    <span><strong><a href="/documents/projectproposal_finaldraft" download>Project Proposal</a></strong></span>
     <span>  </span>
-    <span><a href="/documents/NthabiLiteratureReview.pdf" download>Literature Review</a></span>
+    <span><strong><a href="/documents/NthabiLiteratureReview.pdf" download>Literature Review</a></strong></span>
     <span>  </span>
-    <span><a href="/source_code/IsiXhosa_Spellchecker.zip" download>IsiXhosa Spellchecker source code</a><span>
+    <span><strong><a href="/source_code/IsiXhosa_Spellchecker.zip" download>IsiXhosa Spellchecker source code</a></strong><span>
     <span>  </span>
-    <span><a href="/documents/NthabisengMashiane.pdf" download>Final report</a></span>
-
-
-
+    <span><strong><a href="/documents/NthabisengMashiane.pdf" download>Final report</a></strong></span>
   </p>
 </div>
+
+<!-- Footer -->
+  <footer>&copy; University of Cape Town, Department of Computer Science. All rights reserved </footer>
+</body>
 </html>

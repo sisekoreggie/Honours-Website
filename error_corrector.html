@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head> 
+	<head>
 		<title> ALSPEL </title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
+
 	</head>
 	<body>
 
@@ -20,14 +20,14 @@
 			  <a href="#about" class="w3-bar-item w3-button">About</a>
 			  <!-- <a href="#" class="w3-bar-item w3-button">Error Detection</a> -->
 			  <a href="#rule_based" class="w3-bar-item w3-button">Rule-Based</a>
-			  <a href="error_corrector.html" class="w3-bar-item w3-button">Statistical-Based</a>
+			  <a href="stats.html" class="w3-bar-item w3-button">Statistical-Based</a>
 			  <a href="#correction" class="w3-bar-item w3-button">Error Correction</a>
 			  <a href="#downloads" class="w3-bar-item w3-button">Downloads</a>
 			  <a href="#contacts" class="w3-bar-item w3-button">Contact</a>
 			</div>
 		  </div>
 		</div>
-		
+
 		<!-- Header -->
 		<header id = "home" class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px">
 		  <img class="w3-image" src="images/siseko_reggie.jpg" alt="Homepage Image" width="1600" height="800">
@@ -37,35 +37,35 @@
 		</header>
 		<h1 id = "corrector" class="w3-center"> IsiZulu Error Corrector </h1>
 		<p>
-			Error detection and correction are important spell checking aspects. 
-			In order for a spellchecker to be viewed as successful, it should be representative of the language it is correcting, it’s corpus or dictionary 
-			should be free of errors and it should be able to recognize correctly spelled words and flag incorrectly spelled words at a high accuracy rate. 
+			Error detection and correction are important spell checking aspects.
+			In order for a spellchecker to be viewed as successful, it should be representative of the language it is correcting, it’s corpus or dictionary
+			should be free of errors and it should be able to recognize correctly spelled words and flag incorrectly spelled words at a high accuracy rate.
 			On top of this, the spellchecker should be able to provide candidate corrections for words that are flagged as incorrect using an error corrector.
-			The exisiting isiZulu spellchecker could only perform error detection. The error corrector was designed and integrated with the error detector to 
+			The exisiting isiZulu spellchecker could only perform error detection. The error corrector was designed and integrated with the error detector to
 			create a complete isiZulu spellchecker. A statistical-based approach was utilized in the design of the error corrector.
 		</p>
-		
+
 		<h4 id = "errors"> Spelling Errors</h4>
 		<p>
-			Spellcheckers aim to detect two types of spelling errors that occur in non-word and real world (or context-based) spelling errors. 
-			Non-words errors are words that do not occur in a given language. These errors are usually caused by typographical errors made by 
-			the user when typing or by spelling a given word according to its pronunciation (phonetical errors). 
-			The error corrector focusses on non-word error correction with one-character change from the intended word. 
-			There are 4 types of non-word errors, viz. substitutions, insertions, deletions and transpositions.Substitution is when a letter 
-			in a word is replaced with another, insertion is when a letter is added to a word, 
+			Spellcheckers aim to detect two types of spelling errors that occur in non-word and real world (or context-based) spelling errors.
+			Non-words errors are words that do not occur in a given language. These errors are usually caused by typographical errors made by
+			the user when typing or by spelling a given word according to its pronunciation (phonetical errors).
+			The error corrector focusses on non-word error correction with one-character change from the intended word.
+			There are 4 types of non-word errors, viz. substitutions, insertions, deletions and transpositions.Substitution is when a letter
+			in a word is replaced with another, insertion is when a letter is added to a word,
 			deletion is when a letter is omitted from a word and transposition is when a swap occurs between 2 adjacent letters in a given word.
 		</p>
-		
+
 		<h4 id = "system"> System Design and Implementation</h4>
 		<p>
 			The design of the error corrector was implemented using the Java programming language. An isiZulu corpus, trigrams and the minimum-edit distance were used to create the error corrector.
-			A corpus is a collection of written texts used for linguistic analysis. A trigram is a three-letter subsequence of a word. Edit distance is the number of insertion, deletion, substitution and/or 
+			A corpus is a collection of written texts used for linguistic analysis. A trigram is a three-letter subsequence of a word. Edit distance is the number of insertion, deletion, substitution and/or
 			transposition operations that will have to be performed on the misspelled word to acquire the correctly spelled word
-			An isiZulu corpus was obtained from Dr. Langa Khumalo from the Language Department of the University of KwaZulu-Natal. The corpus comprises of 
-			isiZulu articles and novels stored in text files. The corpus was used to create trigram constituents of isiZulu words and the frequency of each unique trigram occurring in the corpus was calculated. 
-			The frequencies were used to determine if a trigram will be used to find candidate corrections for an incorrectly spelled word based on a given frequency threshold. 
-			Once a word was flagged as incorrectly spelled by the error detector, the minimum edit distance was used to find candidate trigrams for a trigrams that are found to be incorrect from a given incorrectly 
-			spelled word. String manipulation is then used to combine the trigrams to form correctly spelled isiZulu words. 
+			An isiZulu corpus was obtained from Dr. Langa Khumalo from the Language Department of the University of KwaZulu-Natal. The corpus comprises of
+			isiZulu articles and novels stored in text files. The corpus was used to create trigram constituents of isiZulu words and the frequency of each unique trigram occurring in the corpus was calculated.
+			The frequencies were used to determine if a trigram will be used to find candidate corrections for an incorrectly spelled word based on a given frequency threshold.
+			Once a word was flagged as incorrectly spelled by the error detector, the minimum edit distance was used to find candidate trigrams for a trigrams that are found to be incorrect from a given incorrectly
+			spelled word. String manipulation is then used to combine the trigrams to form correctly spelled isiZulu words.
 		</p>
 		<div style ="text-align:center;">
 			<img src="images/corrections.png" class="w3-round w3-image w3-opacity-min">
@@ -73,15 +73,15 @@
 		<h4 id = "experiment"> Experiment</h4>
 		<p>
 			A textfile containing 6000 correctly spelled isisZulu words was used to create the 4 types of non-word spelling errors. These incorrectly spelled words were then used to test the accuracy of the error corrector.
-			Accuracy was measured in terms of the number of incorrectly words the error corrector was able to provide candidate corrections for. The experiment also looked at the suggestion adequacy of the error corrector. 
-			Suggestion adequacy denotes the ability of the error corrector to provide accurate suggestions that are relevant to the user. A scoring system was used to determine the suggestion adequacy of the error corrector. 
-			The accuracy of the spellchecker as a whole was also looked at, in terms of lexical and error recall and precision measures detailed in the paper. 
+			Accuracy was measured in terms of the number of incorrectly words the error corrector was able to provide candidate corrections for. The experiment also looked at the suggestion adequacy of the error corrector.
+			Suggestion adequacy denotes the ability of the error corrector to provide accurate suggestions that are relevant to the user. A scoring system was used to determine the suggestion adequacy of the error corrector.
+			The accuracy of the spellchecker as a whole was also looked at, in terms of lexical and error recall and precision measures detailed in the paper.
 		</p>
 
-		
+
 		<h4 id = "results"> Results</h4>
 		<p>
-			The system achieved a lexical recall rate of 89%, an error recall of 84%, a lexical precision of 85% and an error precision of 88%. The error corrector was found 
+			The system achieved a lexical recall rate of 89%, an error recall of 84%, a lexical precision of 85% and an error precision of 88%. The error corrector was found
 			to have an accuracy rate of 94%. The overall suggestion adequacy of the error corrector was found to be 62%.
 		</p>
 			<div style ="text-align:center;">
@@ -90,13 +90,13 @@
 			<div style ="text-align:center;">
 			<img src="images/correctResults.png" class="w3-round w3-image w3-opacity-min">
 			</div>
-		
+
 		<h4 id = "conclude"> Conclusion</h4>
 		<p>
-			The statistical-based error corrector was successfully designed and implmented using an isiZulu corpus, trigrams and the minimum edit distance. From the above 
-			results, the system is able to recognize correctly spelled words and flag incorrectly spelled words at a high accuracy rate. On top of this, the spellchecker is able to provide candidate corrections for words 
+			The statistical-based error corrector was successfully designed and implmented using an isiZulu corpus, trigrams and the minimum edit distance. From the above
+			results, the system is able to recognize correctly spelled words and flag incorrectly spelled words at a high accuracy rate. On top of this, the spellchecker is able to provide candidate corrections for words
 			that are flagged as incorrect using the error corrector.
 		</p>
-		
+
 	</body>
 </html>

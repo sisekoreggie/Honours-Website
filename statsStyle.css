@@ -2,8 +2,42 @@
   padding: 0cm 2cm 1cm 2cm;
 }
 
+.content2{
+  padding: 0cm 2cm 1cm 2cm;
+}
 span:before{
     content:" ";
     display:inline-block;
     width:32px;
+}
+
+/* Footer Styling */
+footer {
+	background: #000080;
+	color:white;
+	text-align: center;
+	width: 100%;
+}
+
+/* Hyperlink style */
+a{
+  color: #000080;
+
+}
+
+img{
+  border: solid 2px black;
+  border-radius: 8px;
+}
+
+/* Text section styling */
+section {
+    background: #000080;
+	width: 100%;
+	text-align: center;
+	height: 30%;
+}
+
+.top {
+	color: #ffffff;
 }
