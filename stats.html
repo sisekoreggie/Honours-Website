@@ -49,18 +49,18 @@
     TshiVenda, XiTsonga, IsiNdebele and IsiSwati are collectively
     known as Bantu languages and are the largest language group in
     South Africa. Within these Bantu languages exists a sub-group
-    known as Nguni wherein the language being focused on in this
-    paper -isiXhosa - is found. According to the 2011 census of South
+    known as Nguni wherein the language being focused on-isiXhosa - is found.
+    According to the 2011 census of South
     Africa, approximately 8.1 million people speak isiXhosa which
     accounts for 16% of the population of South Africa, second to
     23% of isiZulu speakers in South Africa.
-    The aim of the project is to create a spellchecker for isiXhosa that
+    This project aimed to create a spellchecker for isiXhosa that
     can correctly perform isolated non-word error detection as there
-    is currently no standalone spellchecker for isiXhosa. A secondary
-    aim of this project is to investigate the accuracy of the isiXhosa
+    is currently no standalone spellchecker for isiXhosa. Secondly,
+    this project aimed to investigate the accuracy of the isiXhosa
     spellchecker and assess whether it can achieve the same accuracy
     or exceed that of the standalone isiZulu spellchecker created by
-    Ndaba et al. [13] which has an accuracy of 89%
+    Ndaba et al. [13] which has an accuracy of 89%.
 
   </p>
 </dv>
@@ -68,16 +68,15 @@
 <div>
   <h2>System Design & Implementation</h2>
   <p class="content">
-  The error detector uses n-gram analysis, particularly character trigrams.
+  The error detector used n-gram analysis, particularly character trigrams.
   These trigrams were created from the word corpus received from Dr Mantoa-Masoko (the
   client) which was combined with an online corpus downloaded from the North West University digital languages
   resources website which can be found
   <a href="https://rma.nwu.ac.za/index.php/catalogsearch/result/?q=isiXhosa+NCHLT+Text+Corpora"><strong> here </strong></a> .
 
-  The corpus has to be clean and prepared for use by the spellchecker. This step is important as the
+  The corpus has to be clean and prepared for use by the spellchecker. This is an important step as the
   documents used to create the corpus directly affect the performance of the spellchecker.
-  A clean corpus is one which does not contain words of another language and punctuation as
-  this will affect the creation of the trigrams.
+  A clean corpus is one which does not contain words of another language and punctuation.
   A cleaner corpus leads to better results. Although no spellchecker is 100% accurate, clean and
   large corpora improve the performance of the spellchecker.
   A trigram is a set of 3 consecutive characters. For example, if the input word is
@@ -102,7 +101,7 @@ in​ ​ real-time​ ​ as​ ​ they​ ​ used​ ​ the​ ​ tool​ 
   <div class="picture">
   <figure>
     <img src="images/isiXhosaSpellchecker.png" class="w3-round w3-image w3-opacity-min" alt="IsiXhosa spellchecker" width="600" height="750">
-  </br><figcaption>IsiXhosa Spellchecker Interface</figcaption>
+  </br><figcaption>IsiXhosa Spellchecker Interface developed using Java</figcaption>
   </figure>
   </div>
 </div>

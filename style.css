@@ -77,18 +77,17 @@ td:nth-child(odd) {
 
 /* Paragraphy Styling */
 p {
-    font-family: "Times New Roman", Times, serif;
+    /*font-family: "Times New Roman", Times, serif;
 	font-style: italic;
-    font-size: 120%;
+    font-size: 120%;*/
 }
 
 /* Footer Styling */
 footer {
-	background: #00008;
+	background: #000080;
 	color:white;
 	text-align: center;
-	margin: 10;
-	width: 140%;
+	width: 100%;
 }
 
 /* Social Media Links */
